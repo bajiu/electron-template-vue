@@ -1,0 +1,57 @@
+{
+  "private": true,
+  "name": "shelf",
+  "version": "1.0.0",
+  "description": "null",
+  "author": {
+    "name": "bajiu",
+    "email": "bajiu@100tal.com"
+  },
+  "scripts": {
+    "start": "electron app/dist/main",
+    "dev": "concurrently \"gulp dev\" \"gulp main\"",
+    "pack": "gulp pack && npm run build",
+    "build": "build",
+    "rebuild": "electron-rebuild -d=https://gh-contractor-zcbenz.cnpmjs.org/atom-shell/dist/ -m ./app"
+  },
+  "license": "MIT",
+  "build": {
+    "appId": "cn.ruan89",
+    "category": "public.app-category.education",
+    "asar": false
+  },
+  "devDependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.8",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-register": "^6.18.0",
+    "babel-runtime": "^6.20.0",
+    "concurrently": "^3.1.0",
+    "devtron": "^1.4.0",
+    "electron": "^1.7.6",
+    "electron-builder": "^8.6.0",
+    "electron-debug": "^1.4.0",
+    "electron-rebuild": "^1.4.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "gulp": "^3.9.1",
+    "gulp-server-livereload": "^1.7.4",
+    "gulp-util": "^3.0.7",
+    "husky": "^0.11.9",
+    "mocha": "^3.2.0",
+    "webpack": "^3.5.2",
+    "tree-kill": "^1.1.0",
+    "run-sequence": "^1.1.5",
+    "vue": "^2.3.3",
+    "vue-loader": "^12.2.2",
+    "vue-template-compiler": "^2.4.2",
+    "vue-style-loader": "^1.0.0",
+    "css-loader": "^0.23.0",
+    "vue-router": "^2.2.1",
+    "sass-loader": "^3.2.3",
+    "node-sass": "^3.13.1"
+  }
+}

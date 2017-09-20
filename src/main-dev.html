@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      height: 100%;
+    }
+    #all {
+      height: 100%;
+    }
+  </style>
+  <!-- <link rel="stylesheet" href="/assets/index.css" /> -->
+</head>
+<body>
+  <div id="all">
+    <transition name="fade" mode="out-in">
+      <router-view></router-view>
+    </transition>
+  </div>
+  <script src="/assets/index.js"></script>
+
+</body>
+</html>

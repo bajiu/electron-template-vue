@@ -1,0 +1,16 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "productName": "template",
+  "description": "not description yet",
+  "main": "dist/main.js",
+  "author": {
+    "name": "bajiu",
+    "email": "bajiu@100tal.com"
+  },
+  "dependencies": {
+    "electron-config": "^0.2.1",
+    "electron-is": "^2.3.0",
+    "electron-log": "^1.2.2"
+  }
+}
